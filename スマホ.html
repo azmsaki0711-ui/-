@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ビジネスインノルテ - インフォメーション</title>
+    <style>
+        /* 全体のスタイル設定 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #fdfaf5; /* 暖かみのあるベージュ */
+            color: #444;
+            line-height: 1.7;
+        }
+
+        /* ヘッダー：北海道の自然をイメージ */
+        header {
+            background-color: #ffffff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 4px solid #8db08b; /* 森のグリーン */
+        }
+
+        .hotel-name {
+            font-size: 1.4rem;
+            color: #5d7a5b;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            margin-bottom: 5px;
+        }
+
+        /* メインコンテンツ */
+        .container {
+            width: 92%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        /* セクション共通 */
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.1rem;
+            color: #6b5b7b; /* 優しいパープル */
+            border-bottom: 2px dashed #d1d1d1;
+            padding-bottom: 8px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: "🌿";
+            margin-right: 8px;
+        }
+
+        /* 企業理念エリア */
+        .philosophy {
+            text-align: center;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* 設備リスト */
+        .facility-item {
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .facility-title {
+            font-weight: bold;
+            color: #8db08b;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: #888;
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        /* 注意書き（赤字） */
+        .alert {
+            color: #c97c7c;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="hotel-name">Business Inn Norte</div>
+        <p style="margin:0; font-size:0.8rem; color:#999;">心暖かいホテルで在り続けます</p>
+    </header>
+
+    <div class="container">
+         <section class="philosophy">  <nav class="toc-container">
+        <span class="toc-title">インフォメーション目次</span>
+        <ul class="toc-grid">
+            <li><a href="#philosophy">企業理念</a></li>
+            <li><a href="#room">客室内設備</a></li>
+            <li><a href="#facility">館内施設・駐車場</a></li>
+            <li><a href="#service">お取扱いサービス</a></li>
+            <li><a href="#etc">滞在中のご案内</a></li>
+            <li><a href="#clean">延長・清掃</a></li>
+            <li><a href="#breakfast">朝食・カフェ</a></li>
+            <li><a href="#internet">Wi-Fi接続</a></li>
+            <li><a href="#rental">無料貸出品</a></li>
+            <li><a href="#shop">フロント販売</a></li>
+            <li><a href="#privacy">規約方針</a></li>
+        </ul>
+    </nav>
+		</section>
+        <section class="philosophy">
+            <h2>企業理念</h2>
+            <p>
+                「ただいま」と「笑顔」があふれる、<br>
+                心暖かいホテルで在り続けます [cite: 2]
+            </p>
+            <p style="font-size: 0.9rem;">
+                私たち「ノルテグループ」は、<br>
+                皆様の生活が「心豊か」になることを常に念頭に置き、<br>
+                社会に貢献し続ける企業であり続けます [cite: 4, 5, 6, 7]
+            </p>
+        </section>
+
+        <section>
+            <h2>客室内設備のご案内</h2>
+            
+            <div class="facility-item">
+                <span class="facility-title">◆ フロント内線</span>
+                内線電話：<strong>9番</strong></div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ Wi-Fi / LAN</span>
+                ID：<strong>NORTE_SPOT</strong>（パスワード不要） <br>
+                <div class="note">
+                    ・LAN接続部品はお客様でご用意ください <br>
+              ・PCレンタル：1,000円/1泊 <br>
+              ・当ホテルでは、通信環境および機器の提供のみを行っております。接続設定やアプリの不具合等、技術的なトラブルに関するサポートは一切行っておりません<br>
+              また、ご利用により生じたデータの消失やセキュリティ上の問題等についても、当ホテルでは責任を負いかねますのでご了承ください。 <br>
+              </div>
+          </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ ルームカードキー</span>
+                オートロックタイプです <br>
+                チェックアウト時にフロントへご返却ください 
+                <div class="alert">※紛失・破損時は実費2,200円(税込)をご負担いただきます </div>
+          </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ モーニングコール</span>
+                【セット】受話器を上げ ＞ 7 ＋ 起床時間(4桁) <br>
+          【解除】受話器を上げ ＞ 79 </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ テレビ</span>
+                地上波放送を無料でご覧いただけます <br>
+                 Wi-Fiの接続設定やスマートテレビの操作方法、アプリの動作トラブル等、技術的なご質問にはフロントでは一切お答えいたしかねます。お客様ご自身での管理・操作をお願いいたします。 </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ お電話について</span>
+            客室からお部屋同士の内線、および外線電話はご利用いただけません </div>
+        </section>
+		<section>
+            <h2>館内施設・駐車場</h2>
+            
+            <div class="facility-item">
+                <span class="facility-title">◆ レストラン (1F)</span>
+                【朝食】7:00 ～ 10:00（最終入場 9:30）<br>
+                【通常】12:00 ～ 22:00（L.O. 21:30）<br>
+                【ウェルカムドリンク】12:00 ～ 22:00
+                <div class="note">※レストラン内は終日禁煙です。</div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 自動販売機・コインランドリー (5F)</span>
+                ・自販機：ビール、カップ麺、お菓子等<br>
+                ・ランドリー：8:00 ～ 22:00<br>
+                （洗濯 200円 / 乾燥 100円）
+                <div class="note">※5Fに電子レンジ、製氷機もございます。</div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 駐車場（完全予約制）</span>
+                地下駐車場：1,500円（税込）<br>
+                <div class="note">
+                    ※公式HP・電話予約の方は1,000円に割引。チェックアウト後の延長（1時間400円）はフロントへご相談ください。
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 喫煙所</span>
+                4階（屋内）およびエントランス横（屋外）にございます。
+                <div class="alert">※禁煙室での喫煙は違約金10,000円を申し受けます。</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>お取り扱いサービス</h2>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ お荷物のお預かり</span>
+                1階ロビーにコインリターン式ロッカーがございます。<br>
+                ロッカーに入らないお荷物はフロントで承ります（チェックイン前・後も可）。
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 宅配便・FAX・コピー</span>
+                ・宅配便：ヤマト運輸（着払いのみ）<br>
+                ・コピー：白黒1枚 20円<br>
+                ・FAX：受信10枚以上は有料、送信は宛先により異なります。
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ ナイトクリーニング</span>
+                22:00までの受付 ＞ 翌朝7:00仕上がり
+                <div class="note">※年末年始・GW・お盆期間は定休です。</div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ デリバリー</span>
+                ・ピザ（ストロベリーコーンズ）：～24:45<br>
+                ・寿司（海鮮丸）：～20:30<br>
+                ・マッサージ（ハイジ館）：～24:00
+            </div>
+        </section>
+<section>
+            <h2>その他・滞在中のご案内</h2>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ チェックアウト</span>
+                 通常 <strong>午前11:00</strong> まで 
+                 <div class="note">
+                     ・特に手続きはございません。カードキーをフロントへご返却ください <br>
+              ・11:00以降の延長利用は事前にフロントへご相談ください </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 深夜26時以降の入館</span>
+                 防犯のため26時に正面玄関がロックされます <br>
+                 右横のインターホンで係員をお呼び出しください 
+                 <div class="note">※金・土・祝前日の深夜を除きます</div>
+    </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ お忘れ物について</span>
+                 チェックアウト日から90日間保管いたします <br>
+                <div class="alert">
+                     ※飲食物・雑誌類は当日処分させていただきます<br>
+              ※引き渡しは来館または着払い発送となります</div>
+    </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 領収書</span>
+                 お手持ちのレシートと引き換えで発行いたします
+                 <div class="note">※オンライン決済の場合は、各予約サイトへご連絡ください</div>
+    </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ ご面会・貴重品</span>
+                 ・ご面会は1階ロビーをご利用ください <br>
+    ・貴重品はお客様ご自身での管理をお願いいたします</div>
+      </section>
+	  <section>
+            <h2>延長料金・お部屋の清掃</h2>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 客室延長料金（最大14:00まで）</span>
+                 11:00以降のご滞在は以下の延長料金を申し受けます 。
+                 <div style="overflow-x: auto;">
+                   <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse; margin-top: 10px;">
+                        <tr style="background: #f2f5f2; color: #5d7a5b;">
+                            <th width="30%" style="padding: 5px; border: 1px solid #ddd;">タイプ</th>
+                            <th width="22%" style="padding: 5px; border: 1px solid #ddd;">12時迄</th>
+                            <th width="25%" style="padding: 5px; border: 1px solid #ddd;">13時迄</th>
+                            <th width="23%" style="padding: 5px; border: 1px solid #ddd;">14時迄</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd;">シングル</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">600円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,200円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">3,000円</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd;">セミダブル<br>
+                            レディースルーム</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">700円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,400円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">3,500円</td>
+                        </tr>
+						 <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd;">ツイン・ダブル</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">800円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,600円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">4,000円</td>
+                        </tr>
+						 <tr>
+                           <td style="padding: 5px; border: 1px solid #ddd;">添い寝対応ダブル</td>
+                           <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">900円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,800円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">4,500円</td>
+                        </tr>
+						 <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd;">トリプルルーム<br>                              
+                              ファミリールーム<br></td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">900円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,800円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">4,500円</td>
+                        </tr>
+						 <tr>
+                            <td style="padding: 5px; border: 1px solid #ddd;">小上がりお布団ルーム<br>                              
+                              ハリウッドツイン<br></td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">900円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">1,800円</td>
+                            <td style="padding: 5px; border: 1px solid #ddd; text-align: right;">4,500円</td>
+                        </tr>
+                    </table>
+                </div>
+              <div class="note">
+                     ※1名様あたりの料金（税込）です 。<br>
+                   ※小学6年生までの添い寝のお子様は無料です 。
+                   <br>
+                ※お部屋の延長を希望のお客様は、事前にフロントまでお申し付けください。<br>
+              ※繁忙期などはご要望にお応えできない場合もありますので、あらかじめごりょうしょうください。              </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ お部屋の清掃について</span>
+                 ・通常はタオル等のアメニティ交換のみとなります <br>
+                 ・客室清掃は5日間につき1度行います（10:00～14:30） <br>
+                 ・ご連泊のお客様で午後11時を過ぎてもお部屋にご滞在の場合、お電話にて連絡を差し上げる場合がございます<br>
+・清掃が不要なお客様は前日までにフロントにお申し付けください<br>
+・当日、清掃時間に外出をされないお客様で清掃をご希望されるお客様は１階ロビーもしくはレストランにお待ち下さい。<br>
+・ベットの上にモノを置かないようにお願い致します。
+<div class="note"></div>
+                 <div class="alert">※エコプランのお客様は、清掃・交換が全て有料となります </div>
+        </div>
+
+            <div class="facility-item">
+                <p><span class="facility-title">◆ 駐車場延長料金</span>
+                 ・1時間毎：400円（税込） <br>
+          ・当日最大：1,000円〜1,500円（予約経路により異なります）<br>
+          ・延長希望のお客様は事前にフロントまでお申し付けください。<br>
+              </p>
+        </div>
+        </section>
+		<section>
+            <h2>その他・滞在中のご案内</h2>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ チェックアウト</span>
+                通常 <strong>午前11:00</strong> まで 
+                <div class="note">
+                    ・お手続きは不要です。カードキーをフロントへご返却ください [cite: 134, 135]<br>
+                    ・11:00以降のご利用は事前にフロントへご連絡願います [cite: 138]
+              </div>
+          </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 深夜26時以降の入館</span>
+                防犯のため26時に正面玄関がロックされます <br>
+                右横のインターホンで係員をお呼び出しください 
+                
+                <div class="note">※金・土・祝前日の深夜を除きます </div>
+          </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ お忘れ物について</span>
+                チェックアウト日から90日間保管いたします <br>
+                <div class="alert">
+                    ※飲食物・雑誌類は当日処分させていただきます <br>
+              ※引き渡しは来館または着払い発送となります </div>
+          </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ 領収書</span>
+                お手持ちのレシートと引き換えで発行いたします 
+                <div class="note">※オンライン決済の場合は、各予約サイトへご連絡ください </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ ご面会・貴重品</span>
+                ・ご面会は1階ロビーをご利用ください <br>
+                ・現金や貴金属などの貴重品はお客様ご自身での管理をお願いいたします </div>
+        </section>
+		<section>
+            <h2>レストランのご案内 (1F)</h2>
+            
+            <div class="facility-item">
+                <span class="facility-title">◆ 有料軽朝食</span>
+                料金：<strong>おひとり様 700円（税込）</strong><br>
+                時間：<strong>7:00 ～ 9:30</strong>（10:00 CLOSE）
+                
+                <div class="note">
+                    <strong>【内容】</strong><br>
+                    ・ご飯 / 出汁茶漬け / 味噌汁<br>
+                    ・パン（2種）<br>
+                    ・6種類のおかず（日替わり）<br>
+                    ・グリーンサラダ<br>
+                    ・コーヒー / 紅茶 / 煎茶<br>
+                    ・アップルウォーター
+                </div>
+              <div class="alert" style="font-size: 0.85rem;">
+                    ※状況によってセットメニューとなる場合がございます。<br>
+                  ※朝食券販売：12:00～22:00 / 7:00～9:00迄
+                  <br>
+                ※朝食付きプランでご予約のお客様はチェックイン時に朝食券をお渡ししております</div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ カフェタイム・通常営業</span>
+                時間：<strong>12:00 ～ 22:00</strong>（L.O. 21:30）
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ ウェルカムドリンクサービス</span>
+                時間：<strong>12:00 ～ 22:00</strong>
+                <p style="margin: 5px 0 0 0;">セルフサービスにてご自由にお召し上がりいただけます。</p>
+                <div class="note">※レストラン内は終日禁煙です。</div>
+            </div>
+        </section>
+		<section>
+            <h2>インターネット・Wi-Fi接続</h2>
+            
+            <div class="facility-item">
+                <span class="facility-title">◆ Free Wi-Fi</span>
+                スマートフォン、パソコン、ゲーム機でご利用いただけます。
+                <div style="background-color: #f0f4f0; border: 1px dashed #8db08b; padding: 15px; border-radius: 8px; text-align: center; margin: 10px 0;">
+                    <small>ネットワーク名(ID)</small><br>
+                    <strong style="font-size: 1.2rem; color: #5d7a5b;">NORTE_SPOT</strong><br>
+                    <small>※パスワードはございません</small>
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title">◆ その他の接続方法</span>
+                <ul>
+                    <li><strong>有線LAN</strong>：デスクの引き出しにご用意しております。</li>
+                    <li><strong>ポケットWi-Fi</strong>：貸し出しもございます（個数制限あり）。<br>
+                    フロントへお申し付けください。</li>
+                    <li>当ホテルでは、通信環境および機器の提供のみを行っております。接続設定やアプリの不具合等、技術的なトラブルに関するサポートは一切行っておりません。また、ご利用により生じたデータの消失やセキュリティ上の問題等についても、当ホテルでは責任を負いかねますのでご了承ください。</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 20px; padding: 15px; background: linear-gradient(135deg, #fff 0%, #f9f0ff 100%); border: 1px solid #e0d0f0; border-radius: 10px;">
+                <span class="facility-title" style="color: #6b5b7b;">✨ AIコンシェルジュ「talkappi」</span>
+                <p style="font-size: 0.85rem; margin: 5px 0;">
+                    ご滞在中のお手伝い（グルメ情報・観光名所など）は、AIにお任せください。
+                </p>
+                <div style="text-align: center; font-size: 0.8rem; color: #a689b0; font-weight: bold;">
+                    「はじめました。私にお任せください！」
+                </div>
+            </div>
+        </section>
+		<section>
+            <h2>無料貸出品のご案内 (FREE RENTAL)</h2>
+            <p style="font-size: 0.85rem; color: #888; margin-bottom: 15px;">
+                ご希望のお客様はフロント（内線9番）までお申し付けください。
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div style="background: #f4f7f4; padding: 12px; border-radius: 8px;">
+                    <span style="font-size: 1.2rem;">💨</span> <strong>空調・加湿</strong>
+                    <ul style="margin: 5px 0; padding-left: 18px; font-size: 0.85rem; color: #555;">
+                        <li>加湿器</li>
+                        <li>空気清浄機</li>
+                    </ul>
+                </div>
+
+                <div style="background: #f4f7f4; padding: 12px; border-radius: 8px;">
+                    <span style="font-size: 1.2rem;">💤</span> <strong>寝具</strong>
+                    <ul style="margin: 5px 0; padding-left: 18px; font-size: 0.85rem; color: #555;">
+                        <li>毛布</li>
+                        <li>低反発枕</li>
+                    </ul>
+                </div>
+
+                <div style="background: #f4f7f4; padding: 12px; border-radius: 8px;">
+                    <span style="font-size: 1.2rem;">🔌</span> <strong>電気機器</strong>
+                    <ul style="margin: 5px 0; padding-left: 18px; font-size: 0.85rem; color: #555;">
+                        <li>充電器</li>
+                        <li>延長コード</li>
+                        <li>HDMIケーブル</li>
+                        <li>デスクライト</li>
+                    </ul>
+                </div>
+
+                <div style="background: #f4f7f4; padding: 12px; border-radius: 8px;">
+                    <span style="font-size: 1.2rem;">👔</span> <strong>生活備品</strong>
+                    <ul style="margin: 5px 0; padding-left: 18px; font-size: 0.85rem; color: #555;">
+                        <li>ズボンプレッサー</li>
+                        <li>アイロン</li>
+                        <li>爪切り</li>
+                        <li>オープナー</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="note" style="margin-top: 15px; text-align: center;">
+                ※数に限りがございますので、予めご了承ください。
+            </div>
+        </section>
+		<section>
+            <h2>フロント販売商品：HONOKADO</h2>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <p style="font-size: 0.9rem; color: #5d7a5b; margin: 0;">えにわ温泉ほのかのモール温泉水使用</p>
+                <p style="font-size: 1.1rem; font-weight: bold; color: #6b5b7b; margin: 5px 0;">自然が作った美容液</p>
+                <p style="font-size: 0.85rem; color: #888;">ほのかに、よりそう。たしかに、うるおす。</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div class="facility-item" style="background: #fdfaf5; padding: 10px; border-radius: 8px; text-align: center;">
+                    <span class="facility-title">原液ローション</span>
+                    <span style="font-size: 0.8rem;">200ml</span><br>
+                    <strong>1,430円</strong><small>(税込)</small>
+                </div>
+                <div class="facility-item" style="background: #fdfaf5; padding: 10px; border-radius: 8px; text-align: center;">
+                    <span class="facility-title">オールインワンセラム</span>
+                    <span style="font-size: 0.8rem;">100ml</span><br>
+                    <strong>1,980円</strong><small>(税込)</small>
+                </div>
+                <div class="facility-item" style="background: #fdfaf5; padding: 10px; border-radius: 8px; text-align: center;">
+                    <span class="facility-title">ソープ</span>
+                    <span style="font-size: 0.8rem;">40g</span><br>
+                    <strong>660円</strong><small>(税込)</small>
+                </div>
+                <div class="facility-item" style="background: #fdfaf5; padding: 10px; border-radius: 8px; text-align: center;">
+                    <span class="facility-title">バスソルト</span>
+                    <span style="font-size: 0.8rem;">40g</span><br>
+                    <strong>385円</strong><small>(税込)</small>
+                </div>
+            </div>
+
+            <div class="facility-item" style="margin-top: 15px; border: 1px solid #e0eadd; padding: 10px; border-radius: 8px; text-align: center;">
+                <span class="facility-title">🎁 ギフトボックス</span>
+                <strong>5,500円</strong><small>(税込)</small>
+            </div>
+
+            <div class="note" style="text-align: center; margin-top: 15px;">
+                <strong>お土産におススメです</strong><br>
+                取扱時間：8:00 ～ 22:00
+            </div>
+        </section>
+		<section style="font-size: 0.85rem; color: #666; line-height: 1.6;">
+            <h2 style="font-size: 1rem;">プライバシーポリシー</h2>
+            <p style="margin-bottom: 15px;">
+                オーブ株式会社（以下「当社」）は、個人情報保護法その他の法令を遵守し、適切に個人情報を取り扱うため、以下の通り方針を定めます。
+            </p>
+
+            <div class="facility-item">
+                <span class="facility-title" style="color: #5d7a5b;">1. 個人情報の取得</span>
+                氏名、住所、電話番号、メールアドレス、画像・映像等の個人情報を、適法かつ公正な手段により取得いたします。
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title" style="color: #5d7a5b;">2. 利用目的</span>
+                <ul style="margin: 5px 0; padding-left: 18px;">
+                    <li>宿泊・スポーツ施設・学習塾等のサービス提供</li>
+                    <li>お問い合わせ・ご要望への対応</li>
+                    <li>新サービス・商品に関するお知らせ</li>
+                    <li>防犯・安全管理および本人確認</li>
+                </ul>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title" style="color: #5d7a5b;">3. 共同利用について</span>
+                当社は、以下のグループ会社間で個人情報を共同利用することがあります。
+                <div class="note" style="font-size: 0.75rem;">
+                    【共同利用者】<br>
+                    ・株式会社丸新岩寺<br>
+                    ・有限会社しんことに温泉<br>
+                    ・有限会社森林公園温泉
+                </div>
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title" style="color: #5d7a5b;">4. 安全管理措置</span>
+                個人情報の漏洩、滅失の防止のため、組織的・人的・物理的・技術的な安全管理措置を講じます。
+            </div>
+
+            <div class="facility-item">
+                <span class="facility-title" style="color: #5d7a5b;">5. お問い合わせ窓口</span>
+                個人情報の取り扱いに関するお問い合わせは、フロントまたは当社代表までご連絡ください。
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2026 Business Inn Norte
+    </footer>
+
+</body>
+</html>
